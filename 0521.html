@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> 407415024</title>    
+</head>
+<body>
+<h1>Loop</h1>
+<p id="numb"></p>
+<script>
+var text='';
+    var i;
+    var a =0;
+    for(i=0;i<=10;i++){
+        a=a+i;
+        text +='Loop ' + i + ' = ' + a + '<br>';
+    }
+    document.getElementById('numb').innerHTML = text;
+</script>
+
+    
+    
+<p>Today is</p>
+<p id="today"></p>
+    <script>
+        let d = new Date();
+        var n = d.getDay();
+        document.getElementById('today').innerHTML = n;
+    </script>
+
+    
+    
+<button onclick="hari()">Test</button>
+<p id="demo"></p>
+
+
+<script>
+function hari() {
+  var txt;
+  var x = prompt('Please enter a number: ');
+  if(x==1){
+      alert('Monday')
+  }else if(x==2){
+      alert('Tuesday')
+  }else if(x==3){
+      alert('Wednesday')
+  }else if(x==4){
+      alert('Thursday')
+  }else if(x==5){
+      alert('Friday')
+  }else if(x==6){
+      alert('Saturday')
+  }else if(x==7){
+      alert('Sunday')
+}else{
+      alert('Enter 1-7');
+}
+}
+</script>
+
+<p id="demo2" onclick="alert('Clicked1')">Click1</p>
+</body>
+</html>
