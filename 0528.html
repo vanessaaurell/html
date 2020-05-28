@@ -1,0 +1,39 @@
+<html>
+    
+<script>
+    var book='';
+    function addBook(){
+        var book = document.getElementById("book");
+        var txtNode = document.createTextNode(book.value);
+        
+        var li = document.createElement("li");
+        li.appendChild(txtNode);
+        
+        var list = document.getElementById("list");
+        list.appendChild(li);
+        
+        document.getElementById("bookCount").innerText = list.children.length;
+    }
+    if(book.length==0){
+       alert('Please add book title');
+       
+       }
+</script>
+    
+<head>
+    <title> 407415024</title>
+</head>
+    
+<body>
+    
+<p>
+  Book Title:
+  <input id="book" type="text">
+    <button onclick="addBook()"> Add</button>
+</p>
+<p><span id="bookCount"> 0 </span> book(s)</p>
+<ul id="list"></ul>
+    
+</body>
+    
+</html>
